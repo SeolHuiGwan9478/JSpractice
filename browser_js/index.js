@@ -71,11 +71,63 @@
 // tomorrow.after(next);
 
 //노드 삭제하기 : Node.remove()
-const today = document.querySelector('#today');
-const tomorrow = document.querySelector('#tomorrow');
+//const today = document.querySelector('#today');
+//const tomorrow = document.querySelector('#tomorrow');
 
 //tomorrow.remove();
 
 //노드 이동하기 : prepend, append, before, after
-tomorrow.children[1].after(today.children[1]);
+//tomorrow.children[1].after(today.children[1]);
 //tomorrow.children[2].before(today.children[1]);
+
+//HTML 속성 (HTML attribute)
+// const tomorrow = document.querySelector('#tomorrow');
+// const item = tomorrow.firstElementChild;
+// const link = item.firstElementChild;
+
+// //id 속성
+// console.log(tomorrow);
+// console.log(tomorrow.id);
+
+// //class 속성 주의!!
+// console.log(item);
+// console.log(item.className);
+
+// //href 속성
+// console.log(link);
+// console.log(link.href);
+// console.log(tomorrow.href);
+
+// // elem.getAttribute('속성'): 속성에 접근하기
+// console.log(tomorrow.getAttribute('href'));
+// console.log(item.getAttribute('class'));
+
+// // elem.setAttribute('속성', '값'): 속성 추가(수정)하기
+// tomorrow.setAttribute('class', 'list'); // 추가
+// link.setAttribute('href', 'https://www.naver.com'); // 수정하기
+
+// // elem.removeAttribute('속성'): 속성 제거하기
+// tomorrow.removeAttribute('HRef');
+// tomorrow.removeAttribute('CLass');
+
+//스타일 다루기
+const today = document.querySelector('#today');
+const tomorrow = document.querySelector('#tomorrow');
+
+// elem.classList: add, remove, toggle
+const item = tomorrow.children[1];
+// elem.classList: add, remove, toggle
+item.classList.add('done');
+item.classlist.remove('done');
+item.classList.toggle('done', true);
+item.classList.toggle('done', false);
+
+// elem.className
+today.children[1].className = 'done';
+
+//style 프로퍼티
+//today.children[0].style.text-decoration = 'line-through';
+today.children[0].style.textDecoration = 'line-through'
+today.children[0].style.backgroundColor = '#DDDDDD';
+today.children[2].style.textDecoration = 'line-through'
+today.children[2].style.backgroundColor = '#DDDDDD';
