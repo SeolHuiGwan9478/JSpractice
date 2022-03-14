@@ -7,7 +7,10 @@ const list = document.querySelector('#list');
 //     });
 // }
 list.addEventListener('click', function(e){
-    e.target.classList.toggle('done');
+    // if(e.target.tagName === 'LI')
+    if(e.target.classList.contains('item')){
+        e.target.classList.toggle('done');
+    }
 });
 
 const li = document.createElement('li');
