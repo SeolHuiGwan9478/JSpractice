@@ -37,16 +37,3 @@ for(var i = 0; i < 5; i++){
 console.log('x: ', x);
 console.log('y: ', y);
 console.log('z: ', z);
-
-//함수를 만드는 방법
-function printJS(){
-    console.log('JavaScript');
-}
-
-let printHi = function(){
-    console.log("Hi!");
-};
-
-const printCodeit = function(){
-    console.log("HuiGwan!");
-};
