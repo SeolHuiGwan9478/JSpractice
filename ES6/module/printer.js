@@ -1,6 +1,8 @@
 //모듈
-export const title = 'HuigwanPrinter';
+const title = 'HuigwanPrinter';
 
-export function print(value){
+function print(value){
     console.log(value);
 }
+
+export {title, print};

@@ -1,3 +1,3 @@
-import {title, print} from "./printer.js"
+import * as printerJS from "./printer.js"
 
-print(title);
+print(printerJS.title);
